@@ -13,15 +13,30 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Este aplicativo precisa da sua localização para exibi-la no mapa."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "FOREGROUND_SERVICE"
+      ]
     },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "isAndroidForegroundServiceEnabled": true
+        }
+      ]
+    ],
     "web": {
       "favicon": "./assets/favicon.png"
     }
