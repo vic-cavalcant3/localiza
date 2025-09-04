@@ -20,3 +20,22 @@ Ele já inicia focado em um ponto fixo e, caso o usuário permita, mostra també
 - Exibe a **localização do usuário** (se autorizado).
 - Overlay de carregamento e mensagens de erro.
 
+---
+
+## 🚀 Como executar
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/vic-cavalcant3/localiza.git
+  
+2. Instale as dependências:
+    ```bash
+   npm install
+   # ou
+   yarn install
+
+3. Execute o programa
+    ```bash
+   npx expo start
+
+---
